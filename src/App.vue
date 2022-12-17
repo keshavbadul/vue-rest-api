@@ -4,13 +4,25 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+    <div class="max-w-7xl mx-auto">
+      <nav class="py-4 px-2">
+        <RouterLink  
+          class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-800 rounded text-white" 
+          to="/"
+          >
+          Home
+        </RouterLink>
+        <RouterLink 
+          class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-800 rounded text-white"
+          to="/skills"
+        >
+        Skills
+        </RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <main class="max-w-7xl mx-auto min-h-screen">
+    <RouterView />
+  </main>
 </template>
